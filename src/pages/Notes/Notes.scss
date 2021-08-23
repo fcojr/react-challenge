@@ -1,0 +1,39 @@
+.notes {
+    .notes-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            color: #000;
+            text-decoration: none;
+
+            .note-cover {
+                width: 154px;
+                height: 178px;
+                background: #FAF2EC;
+                box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.12);
+                border-radius: 4px;
+                padding: 12px;
+                font-size: 20px;
+                position: relative;
+                margin-bottom: 25px;
+                margin: 10px;
+
+                &:before {
+                    content: "";
+                    background: #FAF2EC;
+                    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.12);
+                    border-radius: 4px;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    z-index: -1;
+                    left: -3px;
+                    top: 3px;
+                }
+            }
+        }
+    }
+}

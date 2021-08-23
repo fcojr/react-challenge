@@ -1,0 +1,85 @@
+.create-journal {
+    .page-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .journal-cover {
+        width: 240px;
+        height: 332.87px;
+        background: #F8E5D6;
+        mix-blend-mode: normal;
+        box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.25), inset -4px -4px 2px rgba(0, 0, 0, 0.1);
+        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
+        border-radius: 2px 16px 16px 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Abhaya Libre;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        padding: 0 25px;
+        text-align: center;
+        margin-bottom: 25px;
+
+        &:before {
+            content: "";
+            background: #F8E5D6;
+            border-radius: 2px 0px 0px 2px;
+            width: 18px;
+            height: calc(100% - 4px);
+            left: 0;
+            position: absolute;
+            top: 0;
+            box-shadow: 1px 0 5px -2px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    form {
+        width: 100%;
+        
+        input {
+            background: #FFFFFF;
+            border: 1px solid rgba(157, 164, 166, 0.07);
+            border-radius: 4px;
+            margin-bottom: 30px;
+            padding: 12px;
+            font-weight: 400;
+            width: 100%;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: #804627;
+            font-family: "Montserrat", sans-serif;
+    
+            &::placeholder {
+                color: #834825;
+                font-size: 12px;
+                font-weight: 600;
+                font-family: "Montserrat", sans-serif;
+            }
+    
+            &:focus {
+                box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.01);
+                filter: drop-shadow(0px 0px 4px #B8E5E3), drop-shadow(0px 0px 2px #B8E5E3);
+            }
+        }
+    
+        button {
+            width: 160px;
+            height: 40px;
+            background: #834825;
+            border: 2px solid #834825;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+        }
+    }
+}
